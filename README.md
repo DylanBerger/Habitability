@@ -1,6 +1,6 @@
 # Overview 
 
-In a previous project, I created a classifier which well, classifies planets. I personally find potentially habitable planets to be so interesting so I was like, lets find some! My interpretation of potential habitability was based on the earth similarity index (similarity to earth in terms of flux and size), and whether it lies in the habitable zone of the star (I will explain my process for that later).
+In a previous project, I created a classifier which well, classifies planets. I find potentially habitable planets to be so interesting so I created a project out of it! My interpretation of potential habitability was based on the earth similarity index (similarity to earth in terms of flux and size), and whether it lies in the habitable zone of the star (I will explain my process for that later).
 
 # Data Preperation + Earth Similarity Index 
 
