@@ -92,4 +92,56 @@ Correlation is not causation, but the ESi certainly can help us narrow down whic
 
 # Habitable Zone 
 
+The next step is to sort the planets by whether they are in the habitable zone or not. 
 
+I wrote an algorithm to approximate it (habitable_zone.ipynb) based on the process outlined by https://www.planetarybiology.com/calculating_habitable_zone.html. What I found however, was that when I sorted the planets, very few actually were in the calculated habitable zone. I was trying to get a list similar to the one on https://phl.upr.edu/projects/habitable-exoplanets-catalog, but couldn't with that process. Either the calculation is a super conservative estimation, or I needed a different way to find whether a planet is in the habitable zone.
+
+My solution was to approximate the boundaries based on equilibrium temperature, which is the range through which a planet can habor water, the driving factor behind habitable zone calculation to begin with. This temperature range is from 175K to 275K as outlined by a paper by Berkeley Scientists https://ulab.berkeley.edu/static/doc/posters/s181.pdf
+
+Sorting the planets like this yielded a result much similar to the one found on the The Planetary Habitability Laboratory Website. 
+
+![image](https://github.com/DylanBerger/Habitability/assets/82914031/4d89e255-921f-4d8c-9d10-5d1f4c303a9a)
+
+I then did similar heat map:
+
+![image](https://github.com/DylanBerger/Habitability/assets/82914031/0ab0382c-8b95-4fe4-940a-b05f1375a990)
+
+Now normally, this would be the end, but I wanted to see if there are any potential superhabitable planets out of my list. 
+
+The conditions are as follows (found on https://handwiki.org/wiki/Astronomy:Superhabitable_planet#Profile_summary): 
+
+- Mass around 2 Earths
+- Orbiting a K-Type Star (these stars last longer, emit less dangerous radiation, are less volatile)
+- Radius around 1.2 or 1.3 Earths
+- Star Age older than 4.5 billion years but younger than 7 billion years
+- Surface Temperature up to 10 Kelvin higher than Earths
+
+I first started sorting by size:
+
+![image](https://github.com/DylanBerger/Habitability/assets/82914031/4400ae74-1af1-4b4f-9ba8-ed407d21dda9)
+
+Which yields four that meet the conditions.
+
+Next was by star type: 
+
+![image](https://github.com/DylanBerger/Habitability/assets/82914031/d6830ef3-15e7-410c-bacf-29a791fd8fe7)
+
+Only Kepler 442 b, met the conditions. 
+
+This happens to be the only exoplanet that the website identified as a potential superhabitable planet.
+
+Next I wanted to analyze how well it did with the other conditions: 
+
+![image](https://github.com/DylanBerger/Habitability/assets/82914031/a7cb354b-3ff5-4171-8ee1-2a41e762f9fe)
+
+Star age is too young and the temperature is a bit cool, but this by no means eliminates it.
+
+![image](https://github.com/DylanBerger/Habitability/assets/82914031/85a8e5a5-6cfe-4a2a-905c-27a1e8262076)
+
+Additionally, the earth similarity index is high and the flux is lower than earth so presumably it would be bombarded with less radiation. 
+
+Kepler 442 b seems to be the best candidate so far.
+
+The 23 other superhabitable planet candidates are either unconfirmed planets (most of them) or do not orbit K-type stars.
+
+Anyways this project was fun, see you next time!
