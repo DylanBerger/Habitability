@@ -116,7 +116,7 @@ The conditions are as follows (found on https://handwiki.org/wiki/Astronomy:Supe
 - Star Age older than 4.5 billion years but younger than 7 billion years
 - Surface Temperature up to 10 Kelvin higher than Earths
 
-I first started sorting by size:
+I first started sorting by size (x-axis is radius, and y-axis is mass):
 
 ![image](https://github.com/DylanBerger/Habitability/assets/82914031/4400ae74-1af1-4b4f-9ba8-ed407d21dda9)
 
@@ -126,7 +126,7 @@ Next was by star type:
 
 ![image](https://github.com/DylanBerger/Habitability/assets/82914031/d6830ef3-15e7-410c-bacf-29a791fd8fe7)
 
-Only Kepler 442 b, met the conditions. 
+Only Kepler 442 b met the conditions. 
 
 This happens to be the only exoplanet that the website identified as a potential superhabitable planet.
 
@@ -138,7 +138,7 @@ Star age is too young and the temperature is a bit cool, but this by no means el
 
 ![image](https://github.com/DylanBerger/Habitability/assets/82914031/85a8e5a5-6cfe-4a2a-905c-27a1e8262076)
 
-Additionally, the earth similarity index is high and the flux is lower than earth so presumably it would be bombarded with less radiation. 
+Additionally, the earth similarity index is high and the flux is lower than earths so presumably it would be bombarded with less radiation. 
 
 Kepler 442 b seems to be the best candidate so far.
 
